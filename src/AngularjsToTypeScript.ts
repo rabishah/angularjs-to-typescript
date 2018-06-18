@@ -31,7 +31,7 @@ class AngularjsToTypeScript {
                 continue;
             }
 
-            var match = str.match(new RegExp("^blink\\.app\\.factory\\s*(" + roundBlockRegex + ")$"));
+            var match = str.match(new RegExp("^legacy\\.app\\.factory\\s*(" + roundBlockRegex + ")$"));
             if (match) {
                 if (factoryFound) {
                     console.log('More than 1 factory present! exiting!');
